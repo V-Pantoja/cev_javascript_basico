@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>País Atual</title>
+</head>
+<body>
+   <h1> País </h1>
+
+   Digite seu país atual: <input type="text" name="txtp" id="txtp" />
+   <input type="button" value="Procurar" onclick="meupais()" />
+
+   <div id="mostrar"></div>
+
+   <script>
+      function meupais() {
+         var paistxt = window.document.querySelector("input#txtp");
+         var result = window.document.querySelector("div#mostrar");
+         var pais = paistxt.value.toLowerCase();
+
+         if (pais == "brasil" || pais == "br") {
+            result.innerHTML = `<h3>Brasileiro</h3>`;
+         } else if (pais == "eua" || pais == "estados unidos" || pais == "estados unidos da america") {
+            result.innerHTML = `<h3>Estrangeiro EUA</h3>`;
+         }
+      }
+
+   </script>
+</body>
+</html>
