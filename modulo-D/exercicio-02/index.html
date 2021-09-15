@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Idade</title>
+
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+
+  <section>
+    <div id="box-dados">
+      <p>Ano de Nascimento :
+        <input type="number" id="ano-n" name="ano-n" min="0">
+      </p>
+
+      <p>Sexo :
+        <input type="radio" name="radsex" id="mas" checked />
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem" />
+        <label for="fem">Feminino</label>
+      </p>
+
+      <button onclick="verificar()">Verificar</button>
+
+    </div>
+
+    <div id="res">
+      Preencha os dados
+    </div>
+  </section>
+
+  <footer>
+    <p>by Victor Pantoja</p>
+
+    <div>
+      <p>Fotos de J. Carter, Victoria Borodinova, Anastasiya Lobanovskaya, Sebastian Voortman, Chloe, Andrea Piacquadio, Askar Abayev e Marllon Cristhian Barbosa.</p><a href="www.pexels.com">Pexels</a>
+    </div>
+  </footer>
+
+  <script src="ex2.js"></script>
+</body>
+</html>
