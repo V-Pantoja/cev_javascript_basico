@@ -1,0 +1,7 @@
+@keyframes animate-shadow {
+   from {
+      box-shadow: 0px 0px 5px black;
+   } to {
+      box-shadow: 0px 0px 20px black;
+   }
+}

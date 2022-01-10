@@ -6,21 +6,32 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Exercicio 15</title>
 
+   <link rel="stylesheet" href="ex1E.css">
+   <link rel="stylesheet" href="animacao1E.css">
+
 </head>
 <body>
 
    <div id="container">
       <section class="conteudo">
-         <p> Inicio : <input type="number" id="inicioN" /></p>
-         <p> Fim : <input type="number" id="fimN" /></p>
-         <p> Passo : <input type="number" id="passoN" /></p>
+         <div>
+            <p> Inicio : </p>
+            <p> Fim : </p>
+            <p> Passo : </p>
+         </div>
+         <div>
+            <input type="number" id="inicioN" />
+            <input type="number" id="fimN" />
+            <input type="number" id="passoN" />
+         </div>
       </section>
 
-      <button>CONTAR</button>
+      <button id="contar" onclick="realizarCalculo()">CONTAR</button>
 
       <h3>Contando:</h3>
-      <section class="resultado"></section>
+      <section id="painel"></section>
    </div>
-   
+
+   <script src="ex1E.js"></script>
 </body>
 </html>
